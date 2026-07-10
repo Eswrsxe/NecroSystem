@@ -13,9 +13,10 @@
         <header class="hud-header">
             <div class="player-stats">
                 <h2>NecroSystem</h2>
-                <p>HP: <span id="txt-hp">100/100</span></p>
+                <p>HP: <span id="txt-hp">108/108</span></p>
                 <p>Mana: <span id="txt-mana">50/50</span></p>
-                <p>Almas: <span id="txt-almas">0</span></p>
+                <p>Almas: <span id="txt-almas">10</span></p>
+                <p>Ossos: <span id="txt-ossos">5</span></p>
             </div>
         </header>
 
@@ -30,29 +31,28 @@
         <main class="game-actions">
             <button id="btn-explorar">Explorar Cemitério Antigo</button>
             <button id="btn-altar">Altar dos Mortos</button>
-<!-- Painel de Combate -->
-<section id="combate-window" class="window-box" style="display: none; border-color: var(--accent-purple);">
-    <h3 style="color: var(--accent-purple);">[ Batalha ]</h3>
-    <div id="inimigo-status">
-        <p><strong>Lobo Corrompido</strong></p>
-        <p>HP: <span id="inimigo-hp">50</span>/50</p>
-    </div>
-    <div class="combate-acoes">
-        <button id="btn-atacar">Atacar com Foice</button>
-        <button id="btn-fugir">Recuar</button>
-    </div>
-    <p id="log-combate" style="color: var(--system-gray); margin-top: 10px;"></p>
-</section>
+            
+            <section id="combate-window" class="window-box" style="display: none; border-color: var(--accent-purple); margin-top: 15px;">
+                <h3 style="color: var(--accent-purple);">[ Batalha ]</h3>
+                <div id="inimigo-status">
+                    <p><strong>Lobo Corrompido</strong></p>
+                    <p>HP: <span id="inimigo-hp">50</span>/50</p>
+                </div>
+                <div class="combate-acoes">
+                    <button id="btn-atacar">Atacar com Foice</button>
+                    <button id="btn-fugir">Recuar</button>
+                </div>
+                <p id="log-combate" style="color: var(--system-gray); margin-top: 10px;"></p>
+            </section>
 
-<!-- Altar de Invocação -->
-<section id="exercito-window" class="window-box" style="display: none;">
-    <h3>[ Altar dos Mortos ]</h3>
-    <p>Custo: 10 Almas | 5 Ossos</p>
-    <button id="btn-invocar-esqueleto" style="border-color: var(--accent-purple); color: var(--accent-purple);">Levantar Esqueleto</button>
-    <div id="lista-exercito" style="margin-top: 15px; color: var(--system-gray);">
-        <p>Seu exército está vazio.</p>
-    </div>
-</section>
+            <section id="exercito-window" class="window-box" style="display: none; margin-top: 15px;">
+                <h3>[ Altar dos Mortos ]</h3>
+                <p>Custo: 10 Almas | 5 Ossos</p>
+                <button id="btn-invocar-esqueleto" style="border-color: var(--accent-purple); color: var(--accent-purple);">Levantar Esqueleto</button>
+                <div id="lista-exercito" style="margin-top: 15px; color: var(--system-gray);">
+                    <p>Seu exército está vazio.</p>
+                </div>
+            </section>
         </main>
     </div>
 
