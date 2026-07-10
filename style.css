@@ -51,19 +51,19 @@ body {
 
 /* Painel do Sistema (IA) */
 .window-box {
-    background: #050505;
-    border: 1px solid var(--system-green);
+    background: #0d0d0d;
+    border: 1px solid var(--system-gray);
     padding: 15px;
     border-radius: 4px;
     margin-bottom: 20px;
-    box-shadow: inset 0 0 10px rgba(0, 255, 204, 0.1);
+    box-shadow: inset 0 0 10px rgba(169, 169, 169, 0.05);
 }
 
 .window-box h3 {
-    color: var(--system-green);
+    color: var(--system-gray);
     margin: 0 0 10px 0;
     font-size: 1.1em;
-    text-shadow: 0 0 4px var(--system-green);
+    text-shadow: 0 0 4px rgba(169, 169, 169, 0.5);
 }
 
 #sistema-dialogo {
@@ -94,12 +94,12 @@ button:hover {
 }
 
 #btn-ajuda-sistema {
-    border-color: var(--system-green);
-    color: var(--system-green);
+    border-color: var(--system-gray);
+    color: var(--system-gray);
 }
 
 #btn-ajuda-sistema:hover {
-    background-color: var(--system-green);
+    background-color: var(--system-gray);
     color: #000;
-    box-shadow: 0 0 8px var(--system-green);
+    box-shadow: 0 0 8px var(--system-gray);
 }
