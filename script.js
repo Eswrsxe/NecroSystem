@@ -2,7 +2,7 @@ import { salvarProgressoNoFirebase, carregarProgressoDoFirebase } from "./js/sal
 
 // Estado inicial do Necromante
 let jogador = {
-    nome: "Rennan",
+    nome: "iniciante",
     nivel: 1,
     hp: 108,
     hpMaximo: 108,
