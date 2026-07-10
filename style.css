@@ -1,11 +1,12 @@
 /* Paleta de Cores e Fontes */
 :root {
-    --bg-color: #080808;
+    --bg-color: #0a0a0a;
     --panel-bg: #121212;
-    --text-main: #e0e0e0;
+    --text-main: #d4d4d4;
     --accent-purple: #8a2be2;
-    --system-green: #00ffcc;
-    --border-dark: 1px solid #333;
+    --purple-dark: #4b0082;
+    --system-gray: #a9a9a9;
+    --border-dark: 1px solid #2a2a2a;
 }
 
 body {
