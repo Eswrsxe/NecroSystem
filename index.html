@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NecroSystem - O Despertar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/sistema.css">
+</head>
+<body>
+
+    <div id="game-container">
+        <header class="hud-header">
+            <div class="player-stats">
+                <h2>NecroSystem</h2>
+                <p>HP: <span id="txt-hp">100/100</span></p>
+                <p>Mana: <span id="txt-mana">50/50</span></p>
+                <p>Almas: <span id="txt-almas">0</span></p>
+            </div>
+        </header>
+
+        <section id="sistema-window" class="window-box">
+            <h3>[ Sistema ]</h3>
+            <div id="sistema-dialogo">
+                <p><em>"A morte não é o fim. É o primeiro recurso. Desperte, Mestre."</em></p>
+            </div>
+            <button id="btn-ajuda-sistema">Pedir Orientação</button>
+        </section>
+
+        <main class="game-actions">
+            <button id="btn-explorar">Explorar Cemitério Antigo</button>
+            <button id="btn-altar">Altar dos Mortos</button>
+        </main>
+    </div>
+
+    <script type="module" src="js/salvar.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
