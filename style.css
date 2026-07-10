@@ -1,0 +1,104 @@
+/* Paleta de Cores e Fontes */
+:root {
+    --bg-color: #080808;
+    --panel-bg: #121212;
+    --text-main: #e0e0e0;
+    --accent-purple: #8a2be2;
+    --system-green: #00ffcc;
+    --border-dark: 1px solid #333;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: 'Courier New', Courier, monospace; /* Visual de terminal e grimório */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#game-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: var(--panel-bg);
+    border: var(--border-dark);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+}
+
+/* HUD do Jogador */
+.hud-header {
+    border-bottom: var(--border-dark);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.hud-header h2 {
+    color: var(--accent-purple);
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px var(--accent-purple);
+}
+
+.player-stats p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+/* Painel do Sistema (IA) */
+.window-box {
+    background: #050505;
+    border: 1px solid var(--system-green);
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 0 10px rgba(0, 255, 204, 0.1);
+}
+
+.window-box h3 {
+    color: var(--system-green);
+    margin: 0 0 10px 0;
+    font-size: 1.1em;
+    text-shadow: 0 0 4px var(--system-green);
+}
+
+#sistema-dialogo {
+    color: #aaaaaa;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+/* Botões */
+button {
+    background-color: #1a1a1a;
+    color: var(--text-main);
+    border: 1px solid #444;
+    padding: 10px 15px;
+    margin: 5px 5px 5px 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--accent-purple);
+    border-color: var(--accent-purple);
+    color: #fff;
+    box-shadow: 0 0 8px var(--accent-purple);
+}
+
+#btn-ajuda-sistema {
+    border-color: var(--system-green);
+    color: var(--system-green);
+}
+
+#btn-ajuda-sistema:hover {
+    background-color: var(--system-green);
+    color: #000;
+    box-shadow: 0 0 8px var(--system-green);
+}
